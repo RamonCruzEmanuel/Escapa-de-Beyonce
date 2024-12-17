@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  #container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  #game-area {
+    position: relative;
+    width: 800px; /* Tamaño mayor */
+    height: 600px;
+    background-color: lightblue;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 2px solid black;
+  }
+  
+  .personaje {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+  }
+  
+  #player {
+    background-color: blue;
+    background-size: cover;
+  }
+  
+  #beyonce {
+    background-color: red;
+    background-size: cover;
+  }
+  
+  #config-menu {
+    width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #config-menu h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  #config-menu label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #config-menu button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #config-menu button:hover {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
