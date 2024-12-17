@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="game-area">
+        <div id="player" class="personaje"></div>
+        <div id="beyonce" class="personaje"></div>
+      </div>
+      <div id="config-menu">
+        <h3>Configuración del Juego</h3>
+        <label>
+          Dificultad:
+          <select id="difficulty">
+            <option value="1">Fácil</option>
+            <option value="2">Media</option>
+            <option value="4">Difícil</option>
+          </select>
+        </label>
+        <br />
+        <label>
+          Fondo:
+          <select id="background">
+            <option value="lightblue">Cielo</option>
+            <option value="lightgreen">Bosque</option>
+            <option value="lightgray">Ciudad</option>
+            <option value="black">Negro</option>
+            <option value="white">Blanco</option>
+          </select>
+        </label>
+        <br />
+        <label>
+          Música:
+          <select id="music">
+            <option value="Undertale - Megalovania.mp3">Megalovania</option>
+            <option value="path_to_music_2.mp3">Otra Canción</option>
+          </select>
+        </label>
+        <br />
+        <label> <input type="checkbox" id="dark-mode" /> Modo oscuro </label>
+        <br />
+        <label>
+          <input type="checkbox" id="sound-toggle" checked /> Música
+        </label>
+        <br />
+        <button id="start-game">Iniciar Juego</button>
+        <button id="apply-settings">Aplicar configuración</button>
+      </div>
+    </div>
+    <audio id="background-music" loop>
+      <source src="Undertale - Megalovania.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
